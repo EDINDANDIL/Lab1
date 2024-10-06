@@ -20,7 +20,7 @@ public class Main {
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (i == 0 && ch == '-') { // Первый символ - минус
-                hasMinusSign = true; // теперь в потенциальном числе есть минус, если найдется еще, метод вернет false
+                hasMinusSign = true; // теперь в потенциальном числе есть минус, если найдется еще, то метод вернет false
                 continue;
             }
             if (Character.isDigit(ch)) {
