@@ -39,7 +39,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Введите два параметра a и b - коэффиценты при x линейного неравенства.");
+        System.out.println("Введите два параметра a и b - коэффициенты при x линейного неравенства.");
         System.out.println("a,b лежат в диапазоне [-10^308 ; 10^308]");
         System.out.println("(x+a)/bx >= 0");
         // ввод параметров a и b
