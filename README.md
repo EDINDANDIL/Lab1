@@ -119,6 +119,9 @@ graph TD
     F -- Да --> O[/b не должен быть равен 0/]
     F -- Нет --> M{b<0}
     M -- Да --> N{a==0}
+    M -- Нет --> L{a==0}
+    N -- Да --> R[/Вывод: x ∈ Ø /]
+    N -- Нет --> R1{-a<0}
     
 
     
@@ -173,7 +176,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Введите два параметра a и b - коэффициенты при x линейного неравенства.");
-        System.out.println("a,b лежат в диапазоне [-(10^308) ; 10^308]");
+        System.out.println("a,b лежат в диапазоне [-(1.79^308) ; 1.79^308]");
         System.out.println("(x+a)/bx >= 0");
         // ввод параметров a и b
         System.out.print("Ввод a: ");
