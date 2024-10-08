@@ -40,7 +40,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Введите два параметра a и b - коэффициенты при x линейного неравенства.");
-        System.out.println("a,b лежат в диапазоне [-10^308 ; 10^308]");
+        System.out.println("a,b лежат в диапазоне [-(10^308) ; 10^308]");
         System.out.println("(x+a)/bx >= 0");
         // ввод параметров a и b
         System.out.print("Ввод a: ");
@@ -72,31 +72,31 @@ public class Main {
                 if (b < 0) {
                     // меняем знак на <=
                     if (a == 0) {
-                        System.out.println("Ответ: no such x");
+                        System.out.println("Ответ: x ∈ Ø");
                     } else { // Нужно понимать, где лежит корень относительно 0
                         if (-a < 0) {
-                            System.out.println("Ответ: " + (-a) + "<=x<0");
+                            System.out.println("Ответ: x ∈ [" + (-a) + " ; 0)");
                         } else {
-                            System.out.println("Ответ: 0<x<=" + (-a));
+                            System.out.println("Ответ: x ∈ ( 0;" + (-a)+" ]");
                         }
                     }
 
                 } else {
                     // знак остается >=
                     if (a == 0) {
-                        System.out.println("Ответ: x!=0");
+                        System.out.println("Ответ: x ≠ 0");
                     } else {
                         if (-a < 0) {
-                            System.out.println("Ответ: x<=" + (-a) + " && x>0");
+                            System.out.println("Ответ: x ∈ (-∞ ; " + (-a)+"]" + "∪ (0 ; +∞)");
                         } else {
-                            System.out.println("Ответ: x<0" + " && x>=" + (-a));
+                            System.out.println("Ответ: x ∈ (-∞ ; 0) ∪ [" + (-a) +" ; +∞");
                         }
                     }
                 }
             }
         }
 
-
+        
     }
 }
 
