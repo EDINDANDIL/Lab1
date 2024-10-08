@@ -205,36 +205,33 @@ public class Main {
                 if (b < 0) {
                     // меняем знак на <=
                     if (a == 0) {
-                        System.out.println("Ответ: no such x");
+                        System.out.println("Ответ: x ∈ Ø");
                     } else { // Нужно понимать, где лежит корень относительно 0
                         if (-a < 0) {
-                            System.out.println("Ответ: " + (-a) + "<=x<0");
+                            System.out.println("Ответ: x ∈ [" + (-a) + " ; 0)");
                         } else {
-                            System.out.println("Ответ: 0<x<=" + (-a));
+                            System.out.println("Ответ: x ∈ ( 0;" + (-a)+" ]");
                         }
                     }
 
                 } else {
                     // знак остается >=
                     if (a == 0) {
-                        System.out.println("Ответ: x!=0");
+                        System.out.println("Ответ: x ≠ 0");
                     } else {
                         if (-a < 0) {
-                            System.out.println("Ответ: x<=" + (-a) + " && x>0");
+                            System.out.println("Ответ: x ∈ (-∞ ; " + (-a)+"]" + "∪ (0 ; +∞)");
                         } else {
-                            System.out.println("Ответ: x<0" + " && x>=" + (-a));
+                            System.out.println("Ответ: x ∈ (-∞ ; 0) ∪ [" + (-a) +" ; +∞");
                         }
                     }
                 }
             }
         }
 
-
+        
     }
 }
-
-
-
 ```
 
 ### 6. Анализ правильности решения
