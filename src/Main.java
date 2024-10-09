@@ -77,7 +77,7 @@ public class Main {
                         if (-a < 0) {
                             System.out.println("Ответ: x ∈ [" + (-a) + " ; 0)");
                         } else {
-                            System.out.println("Ответ: x ∈ ( 0;" + (-a)+" ]");
+                            System.out.println("Ответ: x ∈ (0 ; " + (-a)+"]");
                         }
                     }
 
